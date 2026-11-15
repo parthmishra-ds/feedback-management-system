@@ -1,0 +1,12 @@
+# build output
+backend/target/
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+# secrets: never commit these
+*.ps1
+.env
+*.env

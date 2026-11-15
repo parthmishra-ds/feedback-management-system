@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Feedback Management System</title>
+  <meta name="theme-color" content="#1F4E9E">
+  <meta name="description" content="Give feedback on campus facilities and follow it until it is closed.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts are optional: if the laptop is offline the page falls back to Georgia and system fonts. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231F4E9E'/%3E%3Cpath d='M9 11.5h14a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-6.5L12 25v-4.5H9A1.5 1.5 0 0 1 7.5 19v-6A1.5 1.5 0 0 1 9 11.5z' fill='none' stroke='white' stroke-width='1.8' stroke-linejoin='round'/%3E%3Cpath d='M12.5 16l2.4 2.3 4.6-4.6' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+    <header class="topbar" id="topbar" hidden>
+      <p class="brand">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M9 11.5h14a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-6.5L12 25v-4.5H9A1.5 1.5 0 0 1 7.5 19v-6A1.5 1.5 0 0 1 9 11.5z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M12.5 16l2.4 2.3 4.6-4.6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span><strong id="college-name"></strong><small>Feedback Management System</small></span>
+      </p>
+      <section class="user-chip" aria-label="Account">
+        <span class="avatar" id="avatar" aria-hidden="true"></span>
+        <span class="who"><span id="user-name"></span><span id="user-role" class="role"></span></span>
+        <button id="bell" class="btn btn-quiet bell" type="button" aria-expanded="false" aria-controls="notif-panel">Alerts <span id="bell-count" class="count" hidden>0</span></button>
+        <button id="logout-btn" class="btn btn-quiet" type="button">Log out</button>
+      </section>
+    </header>
+    <main id="app" tabindex="-1"></main>
+  <section id="notif-panel" class="notif" aria-label="Alerts" hidden></section>
+  <footer class="foot">Student project for Database Systems, South Asian University. Not an official SAU website.</footer>
+  <p id="toast" class="toast" role="alert" hidden></p>
+  <p id="announce" class="sr" role="status" aria-live="polite"></p>
+  <script src="js/app.js"></script>
+</body>
+</html>
