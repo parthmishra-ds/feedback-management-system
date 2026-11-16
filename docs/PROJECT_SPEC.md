@@ -1,6 +1,6 @@
 # College Feedback Management System: Project Specification
 
-Team: Ravikant Shukla, Parth Mishra, Saksham Shrivastava, Kshitij Kumar · MCA, South Asian University, New Delhi
+Team: Ravikant Shukla, Parth Mishra, Saksham Shrivastava, Kshitij Kumar · MCA/Int. MTech CSE, South Asian University, New Delhi
 Course: Database Systems · Stack: Spring Boot 3 · MySQL 8 (InnoDB) · HTML/CSS/JavaScript
 
 Everything below is derived from the 15-slide midsem presentation. Where the slides were inconsistent, this document says so (see **Slide gaps resolved**, end of section 1) so the demo and the slides do not contradict each other.
