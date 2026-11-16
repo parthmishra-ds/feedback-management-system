@@ -28,8 +28,6 @@ Full specification: [`docs/PROJECT_SPEC.md`](docs/PROJECT_SPEC.md).
   ```bash
   # Email through any SMTP server (Gmail needs an App Password, not your normal password)
   export NOTIFY_EMAIL=true MAIL_HOST=smtp.gmail.com MAIL_USER=you@gmail.com MAIL_PASSWORD='app-password' MAIL_FROM=you@gmail.com
-  # SMS through Twilio (needs a Twilio account and a Twilio number)
-  export NOTIFY_SMS=true TWILIO_SID=ACxxxxxxxx TWILIO_TOKEN=xxxxxxxx TWILIO_FROM=+1xxxxxxxxxx
   ```
 * **Pop-up alerts:** the Alerts panel has an "Allow pop-up alerts" button. While the page is open (also on a phone browser that allows it) a new alert shows as a system notification. Alerts when the page is closed would need a service worker and a push service; that is not built.
 * **Existing database:** run `database/migration_notifications.sql` once as root (adds the `email`/`phone` columns, the `notifications` table and the grants). A fresh database made from the new `schema.sql` does not need it.
